@@ -40,4 +40,4 @@ public class GUI implements ActionListener{
     count++;
      temp.setText("Clicks: " + count);
   }
-}
+} 

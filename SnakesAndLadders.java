@@ -4,14 +4,17 @@ public class SnakesAndLadders{
      static int AIposition = 1;  // declare variable of computer player opponent
      static int position = 1; // declare variable position of player
      static int diceroll; // declare variable number of dicerolls
+     static int dice1;
+     static int dice2;
+     
    public static void game(){
         Scanner scnr = new Scanner(System.in); // Searches for user input
         
         while (position != 50 || AIposition != 50)
         {
         int AIdiceroll = (int)(2 * Math.random() ) + 1; //determines the number of dice rolls for computer opponent
-        int dice1 = (int)( 6 * Math.random() ) + 1;
-        int dice2 = (int)( 6 * Math.random() ) + 1;
+         dice1 = (int)( 6 * Math.random() ) + 1;
+         dice2 = (int)( 6 * Math.random() ) + 1;
         System.out.println("do you want to roll one die or two dice?");
      	  diceroll = scnr.nextInt();
         scnr.nextLine();   
